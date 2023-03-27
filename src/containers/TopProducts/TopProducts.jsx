@@ -30,9 +30,9 @@ const TopProducts = () => {
       className=" mt-2"
       tabindex="0"
     >
-      <div className="fs-3 p-1 ms-3 text-bg-dark">Top Products</div>
+      <div className="fs-3 text-bg-dark ps-2">Top Products</div>
       <div
-        className="scrollspy-example  p-2 rounded-3 gx-2 m-1 "
+        className="scrollspy-example rounded-3 gx-2 p-2"
         style={{
           overflowX: "scroll",
           whiteSpace: "nowrap",
@@ -41,7 +41,7 @@ const TopProducts = () => {
       >
         <div
           id="card1"
-          className="col-5 col-sm-3 col-md-2 ms-1 d-inline-block "
+          className="col-5 col-sm-3 col-md-2 gx-1 d-inline-block "
         >
           <ReviewCard />
         </div>

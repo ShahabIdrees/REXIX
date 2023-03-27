@@ -48,31 +48,31 @@ const Carousel = () => {
         <div class="carousel-item active">
           <img src="/Restaurants.jpg" class="d-block w-100" alt="..." />
           <div class="carousel-caption d-none d-md-block">
-            <h5>Restaurants</h5>
+            <h5 className="mb-4 fs-1 ">Restaurants</h5>
           </div>
         </div>
         <div class="carousel-item">
           <img src="/gym.jpg" class="d-block w-100" alt="..." />
           <div class="carousel-caption d-none d-md-block">
-            <h5>Gym Equipment</h5>
+            <h5 className="mb-4 fs-1 ">Gym Equipment</h5>
           </div>
         </div>
         <div class="carousel-item">
           <img src="/Cars.jpg" class="d-block w-100" alt="..." />
           <div class="carousel-caption d-none d-md-block">
-            <h5 className="text-dark">Cars</h5>
+            <h5 className="mb-4 fs-1 ">Cars</h5>
           </div>
         </div>
         <div class="carousel-item">
           <img src="/HomeAppliances.jpg" class="d-block w-100" alt="..." />
           <div class="carousel-caption d-none d-md-block">
-            <h5>Home Appliances</h5>
+            <h5 className="mb-4 fs-1 ">Home Appliances</h5>
           </div>
         </div>
         <div class="carousel-item">
           <img src="/Movies.jpg" class="d-block w-100" alt="..." />
           <div class="carousel-caption d-none d-md-block">
-            <h5>Movies</h5>
+            <h5 className="mb-4 fs-1 ">Movies</h5>
           </div>
         </div>
       </div>

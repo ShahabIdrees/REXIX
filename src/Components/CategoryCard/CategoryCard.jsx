@@ -5,7 +5,7 @@ import React from "react";
 
 const CategoryCard = () => {
   return (
-    <div className="card text-bg-dark mb-3">
+    <div className="card shadow-lg text-bg-dark mb-3">
       <h3 className="text-center">Technology</h3>
       <div className="ratio ratio-1x1">
         <img

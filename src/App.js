@@ -17,9 +17,13 @@ const App = () => {
   };
 
   return (
-    <div className="App p-0 border-0 m-0" style={{ background: "#1B1D1F" }}>
-      <Categories />
-      {/* <Home /> */}
+    <div
+      className="App p-2 border-0 m-0"
+      data-bs-theme="dark"
+      style={{ background: "#1B1D1F" }}
+    >
+      {/* <Categories /> */}
+      <Home />
       {/* <CategoriesScreen /> */}
       {/* <Navbar /> */}
       {/* <Header /> */}

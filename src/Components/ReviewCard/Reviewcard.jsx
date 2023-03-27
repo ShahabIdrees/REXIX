@@ -22,7 +22,10 @@ function ReviewCard() {
     //     <LinearProgress variant="determinate" value={50} className={classes.progress} />
     //   </CardContent>
     // </Card>
-    <div className="card text-white mb-3" style={{ background: "#242628" }}>
+    <div
+      className="card text-white mb-3 shadow-lg"
+      style={{ background: "#242628" }}
+    >
       <div>
         <img
           src="/mbookair.png"
