@@ -1,11 +1,11 @@
 import "bootstrap/dist/css/bootstrap.css";
 import "bootstrap/dist/js/bootstrap.js";
-
+import "./CategoryCard.css";
 import React from "react";
 
 const CategoryCard = () => {
   return (
-    <div className="card shadow-lg text-bg-dark mb-3">
+    <div className="card text-bg-dark mb-3">
       <h3 className="text-center">Technology</h3>
       <div className="ratio ratio-1x1">
         <img
@@ -17,8 +17,8 @@ const CategoryCard = () => {
       </div>
 
       <div className="text-center">
-        <a href="#" className="btn btn-outline-info  btn-lg m-2 ">
-          Rate
+        <a href="#" className="btn btn-outline-info m-2 ">
+          See Products
         </a>
       </div>
     </div>

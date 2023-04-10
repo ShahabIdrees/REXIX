@@ -8,11 +8,9 @@ import TopCategories from "../../containers/TopCategories/TopCategories.jsx";
 const Home = () => {
   return (
     <div>
-      <Navbar />
       <TopReviews />
       <TopCategories />
       <Feed />
-      <Footer />
     </div>
   );
 };

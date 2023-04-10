@@ -10,6 +10,7 @@ import {
   faLinkedin,
   faTwitter,
 } from "@fortawesome/free-brands-svg-icons";
+import "./Footer.css";
 
 const Footer = () => {
   return (
@@ -25,7 +26,7 @@ const Footer = () => {
           >
             <FontAwesomeIcon
               icon={faFacebook}
-              className="fs-1 m-1 text-info text-bg-dark"
+              className="icon fs-1 m-1 text-info text-bg-dark"
             />
           </a>
           <a className="btn  btn-outline-info text-bg-dark p-0  m-1">

@@ -1,7 +1,7 @@
 import React from "react";
-import { makeStyles } from "@material-ui/core/styles";
 import "bootstrap/dist/css/bootstrap.css";
 import "bootstrap/dist/js/bootstrap.js";
+import "./Reviewcard.css";
 
 function ReviewCard() {
   return (
@@ -22,10 +22,7 @@ function ReviewCard() {
     //     <LinearProgress variant="determinate" value={50} className={classes.progress} />
     //   </CardContent>
     // </Card>
-    <div
-      className="card text-white mb-3 shadow-lg"
-      style={{ background: "#242628" }}
-    >
+    <div className="card text-white mb-3" style={{ background: "#242628" }}>
       <div>
         <img
           src="/mbookair.png"
@@ -42,7 +39,10 @@ function ReviewCard() {
           <li>256gb Storage</li>
           <li>13.6"</li>
         </ul>
-        <a href="#" className="btn btn-outline-info btn-sm bs-popover-auto">
+        <a
+          href="#"
+          className="btn btn-outline-info btn-sm bs-popover-auto shadow"
+        >
           Rate
         </a>
       </div>
