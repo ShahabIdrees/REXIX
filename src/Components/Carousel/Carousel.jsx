@@ -6,16 +6,16 @@ const Carousel = () => {
   return (
     <div
       id="carouselExampleCaptions"
-      class="carousel slide carousel-fade"
+      className="carousel slide carousel-fade"
       data-bs-ride="carousel"
       data-bs-theme="dark"
     >
-      <div class="carousel-indicators">
+      <div className="carousel-indicators">
         <button
           type="button"
           data-bs-target="#carouselExampleCaptions"
           data-bs-slide-to="0"
-          class="active"
+          className="active"
           aria-current="true"
           aria-label="Slide 1"
         ></button>
@@ -44,55 +44,55 @@ const Carousel = () => {
           aria-label="Slide 5"
         ></button>
       </div>
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img src="/Restaurants.jpg" class="d-block w-100" alt="..." />
-          <div class="carousel-caption d-none d-md-block">
+      <div className="carousel-inner">
+        <div className="carousel-item active">
+          <img src="/Restaurants.jpg" className="d-block w-100" alt="..." />
+          <div className="carousel-caption d-none d-md-block">
             <h5 className="mb-4 fs-1 ">Restaurants</h5>
           </div>
         </div>
-        <div class="carousel-item">
-          <img src="/gym.jpg" class="d-block w-100" alt="..." />
-          <div class="carousel-caption d-none d-md-block">
+        <div className="carousel-item">
+          <img src="/gym.jpg" className="d-block w-100" alt="..." />
+          <div className="carousel-caption d-none d-md-block">
             <h5 className="mb-4 fs-1 ">Gym Equipment</h5>
           </div>
         </div>
-        <div class="carousel-item">
-          <img src="/Cars.jpg" class="d-block w-100" alt="..." />
-          <div class="carousel-caption d-none d-md-block">
+        <div className="carousel-item">
+          <img src="/Cars.jpg" className="d-block w-100" alt="..." />
+          <div className="carousel-caption d-none d-md-block">
             <h5 className="mb-4 fs-1 ">Cars</h5>
           </div>
         </div>
-        <div class="carousel-item">
-          <img src="/HomeAppliances.jpg" class="d-block w-100" alt="..." />
-          <div class="carousel-caption d-none d-md-block">
+        <div className="carousel-item">
+          <img src="/HomeAppliances.jpg" className="d-block w-100" alt="..." />
+          <div className="carousel-caption d-none d-md-block">
             <h5 className="mb-4 fs-1 ">Home Appliances</h5>
           </div>
         </div>
-        <div class="carousel-item">
-          <img src="/Movies.jpg" class="d-block w-100" alt="..." />
-          <div class="carousel-caption d-none d-md-block">
+        <div className="carousel-item">
+          <img src="/Movies.jpg" className="d-block w-100" alt="..." />
+          <div className="carousel-caption d-none d-md-block">
             <h5 className="mb-4 fs-1 ">Movies</h5>
           </div>
         </div>
       </div>
       <button
-        class="carousel-control-prev"
+        className="carousel-control-prev"
         type="button"
         data-bs-target="#carouselExampleCaptions"
         data-bs-slide="prev"
       >
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
+        <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span className="visually-hidden">Previous</span>
       </button>
       <button
-        class="carousel-control-next"
+        className="carousel-control-next"
         type="button"
         data-bs-target="#carouselExampleCaptions"
         data-bs-slide="next"
       >
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
+        <span className="carousel-control-next-icon" aria-hidden="true"></span>
+        <span className="visually-hidden">Next</span>
       </button>
     </div>
   );

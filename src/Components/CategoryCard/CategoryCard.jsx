@@ -3,13 +3,13 @@ import "bootstrap/dist/js/bootstrap.js";
 import "./CategoryCard.css";
 import React from "react";
 
-const CategoryCard = () => {
+const CategoryCard = (props) => {
   return (
     <div className="card text-bg-dark mb-3">
-      <h3 className="text-center">Technology</h3>
+      <h3 className="text-center">{props.name}</h3>
       <div className="ratio ratio-1x1">
         <img
-          src="/mbookair.png"
+          src={props.imgPath}
           className="figure-img img-fluid p-0"
           alt="..."
           // style={{ height: "350px", width: "350px" }}

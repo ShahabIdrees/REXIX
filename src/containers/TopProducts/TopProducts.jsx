@@ -1,10 +1,31 @@
 import React from "react";
+import { useState, useEffect } from "react";
 import ReviewCard from "../../Components/ReviewCard/Reviewcard";
 import "./TopReviews.css";
 import "bootstrap/dist/css/bootstrap.css";
 import "bootstrap/dist/js/bootstrap.js";
 
 const TopProducts = () => {
+  const [TopProducts, setTopProducts] = useState([]);
+
+  useEffect(() => {
+    async function getTopProducts() {
+      const response = await fetch(`http://localhost:5000/getTopProducts`);
+
+      if (!response.ok) {
+        const message = `An error occurred: ${response.statusText}`;
+        window.alert(message);
+        return;
+      }
+      const records = await response.json();
+      await setTopProducts(records);
+      console.log(TopProducts);
+    }
+    getTopProducts();
+    console.log(TopProducts);
+    return;
+  }, []);
+
   return (
     //     <div className='reviews-container' style={{ overflowX: 'scroll', whiteSpace: 'nowrap' }}>
     //         <h2 style={{color: 'white', margin: '20px'}}>Top Products</h2>
@@ -39,42 +60,21 @@ const TopProducts = () => {
           background: "#1B1D1F",
         }}
       >
-        <div
-          id="card1"
-          className="col-5 col-sm-3 col-md-2 gx-1 d-inline-block "
-        >
-          <ReviewCard />
-        </div>
-        <div id="card2" className="col-5 col-sm-3 col-md-2 ms-1 d-inline-block">
-          <ReviewCard />
-        </div>
-        <div id="card3" className="col-5 col-sm-3 col-md-2 ms-1 d-inline-block">
-          <ReviewCard />
-        </div>
-        <div id="card4" className="col-5 col-sm-3 col-md-2 ms-1 d-inline-block">
-          <ReviewCard />
-        </div>
-        <div id="card5" className="col-5 col-sm-3 col-md-2 ms-1 d-inline-block">
-          <ReviewCard />
-        </div>
-        <div id="card6" className="col-5 col-sm-3 col-md-2 ms-1 d-inline-block">
-          <ReviewCard />
-        </div>
-        <div id="card7" className="col-5 col-sm-3 col-md-2 ms-1 d-inline-block">
-          <ReviewCard />
-        </div>
-        <div id="card8" className="col-5 col-sm-3 col-md-2 ms-1 d-inline-block">
-          <ReviewCard />
-        </div>
-        <div id="card9" className="col-5 col-sm-3 col-md-2 ms-1 d-inline-block">
-          <ReviewCard />
-        </div>
-        <div
-          id="card10"
-          className="col-5 col-sm-3 col-md-2 ms-1 d-inline-block"
-        >
-          <ReviewCard />
-        </div>
+        {TopProducts.map((product) => {
+          return (
+            <div
+              id="card1"
+              className="col-5 col-sm-3 col-md-2 gx-1 d-inline-block ms-1"
+            >
+              <ReviewCard
+                key={product.Name}
+                name={product.Name}
+                description={product.description}
+                imgUrl={product.imgUrl}
+              />
+            </div>
+          );
+        })}
       </div>
     </div>
   );
