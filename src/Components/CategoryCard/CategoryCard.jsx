@@ -17,7 +17,7 @@ const CategoryCard = (props) => {
       </div>
 
       <div className="text-center">
-        <a href="#" className="btn btn-outline-info m-2 ">
+        <a href="#" className="btn btn-outline-info m-2">
           See Products
         </a>
       </div>

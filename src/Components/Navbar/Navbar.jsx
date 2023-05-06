@@ -96,7 +96,7 @@ const Navbar = () => {
               <NavLink
                 className="nav-link text-light fs-5 ms-2"
                 aria-current="page"
-                to={`abc`}
+                to={`Register`}
               >
                 Register
               </NavLink>
@@ -105,7 +105,7 @@ const Navbar = () => {
               <NavLink
                 className="nav-link text-light fs-5 ms-2"
                 aria-current="page"
-                to={`abcd`}
+                to={`About`}
               >
                 About
               </NavLink>

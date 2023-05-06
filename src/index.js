@@ -10,11 +10,6 @@ import "./App.css";
 import { BrowserRouter } from "react-router-dom";
 
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import Root from "./routes/root";
-import Home from "./Screens/Home/Home.jsx";
-import ErrorPage from "./error-page";
-import Categories from "./Screens/Categories/Categories";
-import Contact from "./routes/contact";
 
 // const router = createBrowserRouter([
 //   {

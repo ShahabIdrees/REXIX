@@ -15,7 +15,9 @@ import "bootstrap/dist/js/bootstrap.js";
 import TopProducts from "./containers/TopProducts/TopProducts.jsx";
 import TopCategories from "./containers/TopCategories/TopCategories.jsx";
 import Home from "./Screens/Home/Home.jsx";
-import Categories from "./Screens/Categories/Categories.jsx";
+import Categories from "./Screens/Categories/Categories";
+import Register from "./Screens/Register/Register";
+import About from "./Screens/Register/About/About";
 import Foryou from "./containers/Foryou/Foryou";
 import Feed from "./Screens/Feed/Feed";
 
@@ -49,6 +51,8 @@ const App = () => {
           <Route path="/" element={<Home />} />
           <Route path="categories" element={<Categories />} />
           <Route path="feed" element={<Feed />} />
+          <Route path="Register" element={<Register />} />
+          <Route path="About" element={<About />} />
         </Routes>
         <Footer />
       </BrowserRouter>

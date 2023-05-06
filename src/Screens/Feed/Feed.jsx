@@ -1,54 +1,51 @@
 import ReviewCard from "../../Components/ReviewCard/Reviewcard";
+import { useState, useEffect } from "react";
 import React from "react";
 
-const Feed = () => {
+const FeedScreen = () => {
+  const [FeedContent, setFeedContent] = useState([]);
+
+  useEffect(() => {
+    async function getFeedContent() {
+      const response = await fetch(`http://localhost:5000/getFeedContent`);
+      if (!response.ok) {
+        const message = `An error occurred: ${response.statusText}`;
+        window.alert(message);
+        return;
+      }
+      const records = await response.json();
+      setFeedContent(records);
+    }
+
+    getFeedContent();
+
+    console.log(FeedContent);
+  }, []);
+
   return (
-    <span>
-      <span className="left-sidebar text-light d-lg-inline-block d-none col-lg-3">
-        left
-      </span>
-      <div
-        className="main-content text-white d-inline-block overflow-hidden col-12 col-md-8 col-lg-6 h-100"
-        data-bs-spy="scroll"
-        data-bs-smooth-scroll="true"
-        style={{ height: "200px", overflow: "hidden" }}
-      >
-        <div>
-          <ReviewCard />
+    <div className="container-fluid">
+      <div className="row">
+        <div className="col bg-danger col-4">div 1</div>
+
+        <div
+          className="col bg-dark overflow-scroll col-5 justify-content-center"
+          style={{ height: "100vh" }}
+        >
+          {FeedContent.map((post) => {
+            return (
+              <ReviewCard
+                imgUrl={post.imgUrl}
+                name={post.Name}
+                description={post.description}
+              />
+            );
+          })}
+          <button className="btn btn-outline-info">See more</button>
         </div>
-        <div>
-          <ReviewCard />
-        </div>
-        <div>
-          <ReviewCard />
-        </div>
-        <div>
-          <ReviewCard />
-        </div>
-        <div>
-          <ReviewCard />
-        </div>
-        <div>
-          <ReviewCard />
-        </div>
-        <div>
-          <ReviewCard />
-        </div>
-        <div>
-          <ReviewCard />
-        </div>
-        <div>
-          <ReviewCard />
-        </div>
-        <div>
-          <ReviewCard />
-        </div>
+        <div className="col bg-warning col-3"></div>
       </div>
-      <span className="right- text-white  d-none d-md-inline-block col-md-4 col-lg-3">
-        Right
-      </span>
-    </span>
+    </div>
   );
 };
 
-export default Feed;
+export default FeedScreen;

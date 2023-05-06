@@ -27,24 +27,6 @@ const TopProducts = () => {
   }, []);
 
   return (
-    //     <div className='reviews-container' style={{ overflowX: 'scroll', whiteSpace: 'nowrap' }}>
-    //         <h2 style={{color: 'white', margin: '20px'}}>Top Products</h2>
-    //         <div className='reviews-scroller' style={{ width: '100%', display: 'grid',
-    //   gridTemplateColumns: 'repeat(10, 1fr)', }}>
-    //         <ReviewCard/>
-    //         <ReviewCard/>
-    //         <ReviewCard/>
-    //         <ReviewCard/>
-    //         <ReviewCard/>
-    //         <ReviewCard/>
-    //         <ReviewCard/>
-    //         <ReviewCard/>
-    //         <ReviewCard/>
-    //         <ReviewCard/>
-
-    //         </div>
-    //     </div>
-
     <div
       data-bs-target="#navbar-example2"
       data-bs-smooth-scroll="true"
