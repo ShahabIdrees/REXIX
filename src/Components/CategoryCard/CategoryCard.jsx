@@ -5,8 +5,8 @@ import React from "react";
 
 const CategoryCard = (props) => {
   return (
-    <div className="card text-bg-dark mb-3">
-      <h3 className="text-center">{props.name}</h3>
+    <div className="card text-bg-dark mb-3" aria-hidden="true">
+      <h3 className="text-center card-title placeholder-glow">{props.name}</h3>
       <div className="ratio ratio-1x1">
         <img
           src={props.imgPath}

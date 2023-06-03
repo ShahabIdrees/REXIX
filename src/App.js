@@ -20,6 +20,9 @@ import Register from "./Screens/Register/Register";
 import About from "./Screens/Register/About/About";
 import Foryou from "./containers/Foryou/Foryou";
 import Feed from "./Screens/Feed/Feed";
+import Login from "./Screens/Authentication/Login.tsx";
+import Signup from "./Screens/Authentication/Signup.tsx";
+import Auth from "./Screens/Authentication/Auth.tsx";
 
 const App = () => {
   const [isNavOpen, setIsNavOpen] = useState(false);
@@ -53,6 +56,9 @@ const App = () => {
           <Route path="feed" element={<Feed />} />
           <Route path="Register" element={<Register />} />
           <Route path="About" element={<About />} />
+          <Route path="Authenticate" element={<Auth />} />
+          <Route path="SignUp" element={<Signup />} />
+          <Route path="Login" element={<Login />} />
         </Routes>
         <Footer />
       </BrowserRouter>

@@ -5,7 +5,7 @@ import "./Reviewcard.css";
 
 function ReviewCard(props) {
   return (
-    <div className="card text-bg-dark mb-3 " style={{ background: "#242628" }}>
+    <div className="card text-bg-dark  h-100" style={{ background: "#242628" }}>
       <div className="ratio ratio-16x9">
         <img
           src={props.imgUrl}
@@ -35,12 +35,36 @@ function ReviewCard(props) {
               return <li key={str}> {str}</li>;
             })}
         </ul> */}
-        <a
-          href="#"
-          className="btn btn-outline-info btn-sm bs-popover-auto shadow"
-        >
-          Rate
-        </a>
+        <div className="d-flex justify-content-between ps-1 ">
+          <a
+            href="#"
+            className="btn btn-outline-info btn-sm bs-popover-auto align-self-center shadow"
+          >
+            Rate
+          </a>
+          <div
+            className="progress align-self-center shadow"
+            role="progressbar"
+            aria-label="Example with label"
+            aria-valuenow="50"
+            aria-valuemin="0"
+            aria-valuemax="10"
+            style={{ width: "100px" }}
+          >
+            <div
+              className="progress-bar p-1"
+              style={{
+                width: props.rating * 10,
+                background: "#0DCBF0",
+                color: "#2F2F2F",
+                fontSize: "14px",
+                fontWeight: "bolder",
+              }}
+            >
+              {props.rating}
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );

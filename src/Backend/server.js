@@ -128,6 +128,7 @@ app.get("/getTopProducts", function (req, res) {
       Name: "Macbook Air",
       Brand: "Apple",
       imgUrl: "/mbookairm2.jpeg",
+      rating: 9.9,
       description: "ARM-Based M2, 8gb Ram, 256gb SSD, 13.4 inches ",
       category: "Computers",
     },
@@ -135,6 +136,7 @@ app.get("/getTopProducts", function (req, res) {
       Name: "Moby-Dick",
       Brand: "Herman Melville (Author)",
       imgUrl: "/Books.jpg",
+      rating: 9.2,
       description:
         "Thought provoking, Engaging Story, Unique Plot, Emotional resonance ",
       category: "Books",
@@ -143,6 +145,7 @@ app.get("/getTopProducts", function (req, res) {
       Name: "Barbell Plates",
       Brand: "G-Fit",
       imgUrl: "/gym.jpg",
+      rating: 9.5,
       description:
         '25 lb plates, 15" diameter, Beautiful Colors, Durable Materials, Precise markings ',
       category: "Gym & Fitness",
@@ -151,6 +154,7 @@ app.get("/getTopProducts", function (req, res) {
       Name: " Air-Fryer",
       Brand: "Phillips",
       imgUrl: "/HomeAppliances.jpg",
+      rating: 9.5,
       description:
         "110V-240V, Rapid air technology, Easy to use, Healthy Cooking ",
       category: "Home Appliances",
@@ -159,6 +163,7 @@ app.get("/getTopProducts", function (req, res) {
       Name: "Retina Imac 27 inches 2019",
       Brand: "Apple",
       imgUrl: "/Imac.jpg",
+      rating: 9.5,
       description: "Octa core Core-i9, 64gb Ram, 2TB SSD, 27 inches 5k display",
       category: "Computers",
     },
@@ -166,6 +171,7 @@ app.get("/getTopProducts", function (req, res) {
       Name: "Spatula",
       Brand: "Spatulava",
       imgUrl: "/Kitchenware.jpg",
+      rating: 9.5,
       description: "Heat-resistant, Flexible, Durable, Comfortable Grip ",
       category: "Kitchenware",
     },
@@ -173,6 +179,7 @@ app.get("/getTopProducts", function (req, res) {
       Name: "Base ball bat",
       Brand: "Kookaburra",
       imgUrl: "/Sports.jpg",
+      rating: 9.5,
       description:
         "Maple wood, Comfortable grip, Durable, Customizable length & weight",
       category: "Sports",
@@ -181,6 +188,7 @@ app.get("/getTopProducts", function (req, res) {
       Name: "Macbook Air",
       Brand: "Apple",
       imgUrl: "/mbookairm2.jpeg",
+      rating: 9.5,
       description: "ARM-Based M2, 8gb Ram, 256gb SSD, 13.4 inches ",
       category: "Computers",
     },
@@ -188,6 +196,7 @@ app.get("/getTopProducts", function (req, res) {
       Name: "Moby-Dick",
       Brand: "Herman Melville (Author)",
       imgUrl: "/Books.jpg",
+      rating: 9.5,
       description:
         "Thought provoking, Engaging Story, Unique Plot, Emotional resonance",
       category: "Books",
@@ -196,6 +205,7 @@ app.get("/getTopProducts", function (req, res) {
       Name: "Barbell Plates",
       Brand: "G-Fit",
       imgUrl: "/gym.jpg",
+      rating: 9.5,
       description:
         '25 lb plates, 15" diameter, Beautiful Colors, Durable Materials, Precise markings',
       category: "Gym & Fitness",
@@ -204,6 +214,7 @@ app.get("/getTopProducts", function (req, res) {
       Name: "Air-Fryer",
       Brand: "Phillips",
       imgUrl: "/HomeAppliances.jpg",
+      rating: 9.5,
       description:
         "110V-240V, Rapid air technology, Easy to use, Healthy Cooking",
       category: "Home Appliances",
@@ -212,6 +223,7 @@ app.get("/getTopProducts", function (req, res) {
       Name: "Retina Imac 27 inches 2019",
       Brand: "Apple",
       imgUrl: "/Imac.jpg",
+      rating: 9.3,
       description: "Octa core Core-i9, 64gb Ram, 2TB SSD, 27 inches 5k display",
       category: "Computers",
     },
@@ -219,6 +231,7 @@ app.get("/getTopProducts", function (req, res) {
       Name: "Spatula",
       Brand: "Spatulava",
       imgUrl: "/Kitchenware.jpg",
+      rating: 9.1,
       description: "Heat-resistant, Flexible, Durable, Comfortable Grip",
       category: "Kitchenware",
     },
@@ -226,6 +239,7 @@ app.get("/getTopProducts", function (req, res) {
       Name: "Base ball bat",
       Brand: "Kookaburra",
       imgUrl: "/Sports.jpg",
+      rating: 9.3,
       description:
         "Maple wood, Comfortable grip, Durable, Customizable length & weight",
       category: "Sports",
@@ -252,6 +266,7 @@ app.get("/getForYouProducts", function (req, res) {
       Name: "Macbook Air",
       Brand: "Apple",
       imgUrl: "/mbookairm2.jpeg",
+      rating: 9.9,
       description: "ARM-Based M2, 8gb Ram, 256gb SSD, 13.4 inches ",
       category: "Computers",
     },
@@ -259,6 +274,7 @@ app.get("/getForYouProducts", function (req, res) {
       Name: "Moby-Dick",
       Brand: "Herman Melville (Author)",
       imgUrl: "/Books.jpg",
+      rating: 9.2,
       description:
         "Thought provoking, Engaging Story, Unique Plot, Emotional resonance ",
       category: "Books",
@@ -267,6 +283,7 @@ app.get("/getForYouProducts", function (req, res) {
       Name: "Barbell Plates",
       Brand: "G-Fit",
       imgUrl: "/gym.jpg",
+      rating: 9.5,
       description:
         '25 lb plates, 15" diameter, Beautiful Colors, Durable Materials, Precise markings ',
       category: "Gym & Fitness",
@@ -275,6 +292,7 @@ app.get("/getForYouProducts", function (req, res) {
       Name: " Air-Fryer",
       Brand: "Phillips",
       imgUrl: "/HomeAppliances.jpg",
+      rating: 9.5,
       description:
         "110V-240V, Rapid air technology, Easy to use, Healthy Cooking ",
       category: "Home Appliances",
@@ -283,6 +301,7 @@ app.get("/getForYouProducts", function (req, res) {
       Name: "Retina Imac 27 inches 2019",
       Brand: "Apple",
       imgUrl: "/Imac.jpg",
+      rating: 9.5,
       description: "Octa core Core-i9, 64gb Ram, 2TB SSD, 27 inches 5k display",
       category: "Computers",
     },
@@ -290,6 +309,7 @@ app.get("/getForYouProducts", function (req, res) {
       Name: "Spatula",
       Brand: "Spatulava",
       imgUrl: "/Kitchenware.jpg",
+      rating: 9.5,
       description: "Heat-resistant, Flexible, Durable, Comfortable Grip ",
       category: "Kitchenware",
     },
@@ -297,6 +317,7 @@ app.get("/getForYouProducts", function (req, res) {
       Name: "Base ball bat",
       Brand: "Kookaburra",
       imgUrl: "/Sports.jpg",
+      rating: 9.5,
       description:
         "Maple wood, Comfortable grip, Durable, Customizable length & weight",
       category: "Sports",
@@ -305,6 +326,7 @@ app.get("/getForYouProducts", function (req, res) {
       Name: "Macbook Air",
       Brand: "Apple",
       imgUrl: "/mbookairm2.jpeg",
+      rating: 9.5,
       description: "ARM-Based M2, 8gb Ram, 256gb SSD, 13.4 inches ",
       category: "Computers",
     },
@@ -312,6 +334,7 @@ app.get("/getForYouProducts", function (req, res) {
       Name: "Moby-Dick",
       Brand: "Herman Melville (Author)",
       imgUrl: "/Books.jpg",
+      rating: 9.5,
       description:
         "Thought provoking, Engaging Story, Unique Plot, Emotional resonance",
       category: "Books",
@@ -320,6 +343,7 @@ app.get("/getForYouProducts", function (req, res) {
       Name: "Barbell Plates",
       Brand: "G-Fit",
       imgUrl: "/gym.jpg",
+      rating: 9.5,
       description:
         '25 lb plates, 15" diameter, Beautiful Colors, Durable Materials, Precise markings',
       category: "Gym & Fitness",
@@ -328,6 +352,7 @@ app.get("/getForYouProducts", function (req, res) {
       Name: "Air-Fryer",
       Brand: "Phillips",
       imgUrl: "/HomeAppliances.jpg",
+      rating: 9.5,
       description:
         "110V-240V, Rapid air technology, Easy to use, Healthy Cooking",
       category: "Home Appliances",
@@ -336,6 +361,7 @@ app.get("/getForYouProducts", function (req, res) {
       Name: "Retina Imac 27 inches 2019",
       Brand: "Apple",
       imgUrl: "/Imac.jpg",
+      rating: 9.3,
       description: "Octa core Core-i9, 64gb Ram, 2TB SSD, 27 inches 5k display",
       category: "Computers",
     },
@@ -343,6 +369,7 @@ app.get("/getForYouProducts", function (req, res) {
       Name: "Spatula",
       Brand: "Spatulava",
       imgUrl: "/Kitchenware.jpg",
+      rating: 9.1,
       description: "Heat-resistant, Flexible, Durable, Comfortable Grip",
       category: "Kitchenware",
     },
@@ -350,66 +377,16 @@ app.get("/getForYouProducts", function (req, res) {
       Name: "Base ball bat",
       Brand: "Kookaburra",
       imgUrl: "/Sports.jpg",
+      rating: 9.3,
       description:
         "Maple wood, Comfortable grip, Durable, Customizable length & weight",
       category: "Sports",
     },
     {
-      Name: "Moby-Dick",
-      Brand: "Herman Melville (Author)",
-      imgUrl: "/Books.jpg",
-      description:
-        "Thought provoking, Engaging Story, Unique Plot, Emotional resonance",
-      category: "Books",
-    },
-    {
-      Name: "Barbell Plates",
-      Brand: "G-Fit",
-      imgUrl: "/gym.jpg",
-      description:
-        '25 lb plates, 15" diameter, Beautiful Colors, Durable Materials, Precise markings',
-      category: "Gym & Fitness",
-    },
-  ]);
-});
-
-app.get("/getFeedContent", function (req, res) {
-  res.json([
-    {
-      Name: "Macbook Air",
-      Brand: "Apple",
-      imgUrl: "/mbookairm2.jpeg",
-      description: "ARM-Based M2, 8gb Ram, 256gb SSD, 13.4 inches ",
-      category: "Computers",
-    },
-    {
-      Name: "Moby-Dick",
-      Brand: "Herman Melville (Author)",
-      imgUrl: "/Books.jpg",
-      description:
-        "Thought provoking, Engaging Story, Unique Plot, Emotional resonance ",
-      category: "Books",
-    },
-    {
-      Name: "Barbell Plates",
-      Brand: "G-Fit",
-      imgUrl: "/gym.jpg",
-      description:
-        '25 lb plates, 15" diameter, Beautiful Colors, Durable Materials, Precise markings ',
-      category: "Gym & Fitness",
-    },
-    {
-      Name: " Air-Fryer",
-      Brand: "Phillips",
-      imgUrl: "/HomeAppliances.jpg",
-      description:
-        "110V-240V, Rapid air technology, Easy to use, Healthy Cooking ",
-      category: "Home Appliances",
-    },
-    {
       Name: "Retina Imac 27 inches 2019",
       Brand: "Apple",
       imgUrl: "/Imac.jpg",
+      rating: 9.5,
       description: "Octa core Core-i9, 64gb Ram, 2TB SSD, 27 inches 5k display",
       category: "Computers",
     },
@@ -417,6 +394,7 @@ app.get("/getFeedContent", function (req, res) {
       Name: "Spatula",
       Brand: "Spatulava",
       imgUrl: "/Kitchenware.jpg",
+      rating: 9.5,
       description: "Heat-resistant, Flexible, Durable, Comfortable Grip ",
       category: "Kitchenware",
     },
@@ -424,6 +402,7 @@ app.get("/getFeedContent", function (req, res) {
       Name: "Base ball bat",
       Brand: "Kookaburra",
       imgUrl: "/Sports.jpg",
+      rating: 9.5,
       description:
         "Maple wood, Comfortable grip, Durable, Customizable length & weight",
       category: "Sports",
@@ -432,6 +411,7 @@ app.get("/getFeedContent", function (req, res) {
       Name: "Macbook Air",
       Brand: "Apple",
       imgUrl: "/mbookairm2.jpeg",
+      rating: 9.5,
       description: "ARM-Based M2, 8gb Ram, 256gb SSD, 13.4 inches ",
       category: "Computers",
     },
@@ -439,6 +419,7 @@ app.get("/getFeedContent", function (req, res) {
       Name: "Moby-Dick",
       Brand: "Herman Melville (Author)",
       imgUrl: "/Books.jpg",
+      rating: 9.5,
       description:
         "Thought provoking, Engaging Story, Unique Plot, Emotional resonance",
       category: "Books",
@@ -447,6 +428,7 @@ app.get("/getFeedContent", function (req, res) {
       Name: "Barbell Plates",
       Brand: "G-Fit",
       imgUrl: "/gym.jpg",
+      rating: 9.5,
       description:
         '25 lb plates, 15" diameter, Beautiful Colors, Durable Materials, Precise markings',
       category: "Gym & Fitness",
@@ -455,6 +437,7 @@ app.get("/getFeedContent", function (req, res) {
       Name: "Air-Fryer",
       Brand: "Phillips",
       imgUrl: "/HomeAppliances.jpg",
+      rating: 9.5,
       description:
         "110V-240V, Rapid air technology, Easy to use, Healthy Cooking",
       category: "Home Appliances",
@@ -463,6 +446,7 @@ app.get("/getFeedContent", function (req, res) {
       Name: "Retina Imac 27 inches 2019",
       Brand: "Apple",
       imgUrl: "/Imac.jpg",
+      rating: 9.3,
       description: "Octa core Core-i9, 64gb Ram, 2TB SSD, 27 inches 5k display",
       category: "Computers",
     },
@@ -470,6 +454,7 @@ app.get("/getFeedContent", function (req, res) {
       Name: "Spatula",
       Brand: "Spatulava",
       imgUrl: "/Kitchenware.jpg",
+      rating: 9.1,
       description: "Heat-resistant, Flexible, Durable, Comfortable Grip",
       category: "Kitchenware",
     },
@@ -477,14 +462,49 @@ app.get("/getFeedContent", function (req, res) {
       Name: "Base ball bat",
       Brand: "Kookaburra",
       imgUrl: "/Sports.jpg",
+      rating: 9.3,
       description:
         "Maple wood, Comfortable grip, Durable, Customizable length & weight",
       category: "Sports",
     },
     {
+      Name: "Retina Imac 27 inches 2019",
+      Brand: "Apple",
+      imgUrl: "/Imac.jpg",
+      rating: 9.5,
+      description: "Octa core Core-i9, 64gb Ram, 2TB SSD, 27 inches 5k display",
+      category: "Computers",
+    },
+    {
+      Name: "Spatula",
+      Brand: "Spatulava",
+      imgUrl: "/Kitchenware.jpg",
+      rating: 9.5,
+      description: "Heat-resistant, Flexible, Durable, Comfortable Grip ",
+      category: "Kitchenware",
+    },
+    {
+      Name: "Base ball bat",
+      Brand: "Kookaburra",
+      imgUrl: "/Sports.jpg",
+      rating: 9.5,
+      description:
+        "Maple wood, Comfortable grip, Durable, Customizable length & weight",
+      category: "Sports",
+    },
+    {
+      Name: "Macbook Air",
+      Brand: "Apple",
+      imgUrl: "/mbookairm2.jpeg",
+      rating: 9.5,
+      description: "ARM-Based M2, 8gb Ram, 256gb SSD, 13.4 inches ",
+      category: "Computers",
+    },
+    {
       Name: "Moby-Dick",
       Brand: "Herman Melville (Author)",
       imgUrl: "/Books.jpg",
+      rating: 9.5,
       description:
         "Thought provoking, Engaging Story, Unique Plot, Emotional resonance",
       category: "Books",
@@ -493,9 +513,44 @@ app.get("/getFeedContent", function (req, res) {
       Name: "Barbell Plates",
       Brand: "G-Fit",
       imgUrl: "/gym.jpg",
+      rating: 9.5,
       description:
         '25 lb plates, 15" diameter, Beautiful Colors, Durable Materials, Precise markings',
       category: "Gym & Fitness",
+    },
+    {
+      Name: "Air-Fryer",
+      Brand: "Phillips",
+      imgUrl: "/HomeAppliances.jpg",
+      rating: 9.5,
+      description:
+        "110V-240V, Rapid air technology, Easy to use, Healthy Cooking",
+      category: "Home Appliances",
+    },
+    {
+      Name: "Retina Imac 27 inches 2019",
+      Brand: "Apple",
+      imgUrl: "/Imac.jpg",
+      rating: 9.3,
+      description: "Octa core Core-i9, 64gb Ram, 2TB SSD, 27 inches 5k display",
+      category: "Computers",
+    },
+    {
+      Name: "Spatula",
+      Brand: "Spatulava",
+      imgUrl: "/Kitchenware.jpg",
+      rating: 9.1,
+      description: "Heat-resistant, Flexible, Durable, Comfortable Grip",
+      category: "Kitchenware",
+    },
+    {
+      Name: "Base ball bat",
+      Brand: "Kookaburra",
+      imgUrl: "/Sports.jpg",
+      rating: 9.3,
+      description:
+        "Maple wood, Comfortable grip, Durable, Customizable length & weight",
+      category: "Sports",
     },
   ]);
 });

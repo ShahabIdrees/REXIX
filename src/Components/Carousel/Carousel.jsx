@@ -72,7 +72,12 @@ const Carousel = () => {
         <div className="carousel-item">
           <img src="/Movies.jpg" className="d-block w-100" alt="..." />
           <div className="carousel-caption d-none d-md-block">
-            <h5 className="mb-4 fs-1 ">Movies</h5>
+            <h5
+              className="mb-4 fs-1 "
+              style={{ color: "#fff", background: "#000;" }}
+            >
+              Movies
+            </h5>
           </div>
         </div>
       </div>

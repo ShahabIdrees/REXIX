@@ -35,6 +35,7 @@ const Foryou = () => {
                 name={product.Name}
                 description={product.description}
                 imgUrl={product.imgUrl}
+                rating={product.rating}
               />
             </span>
           );

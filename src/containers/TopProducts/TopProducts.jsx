@@ -51,6 +51,7 @@ const TopProducts = () => {
               <ReviewCard
                 key={product.Name}
                 name={product.Name}
+                rating={product.rating}
                 description={product.description}
                 imgUrl={product.imgUrl}
               />
