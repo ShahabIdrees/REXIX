@@ -34,9 +34,16 @@ const FeedScreen = () => {
           {FeedContent.map((post) => {
             return (
               <ReviewCard
-                imgUrl={post.imgUrl}
-                name={post.Name}
-                description={post.description}
+                title={"Macbook Air M2 15 inches"}
+                description={
+                  "The MacBook is a remarkable blend of elegant design and exceptional performance. With its sleek aluminum chassis, Retina display that dazzles the eyes, and powerful hardware under the hood, it's a true embodiment of sophistication. The buttery smooth user experience, aided by the intuitive macOS, makes every task a pleasure. From creative professionals to students, the MacBook caters to a diverse audience. Its stunning display showcases vibrant colors and sharp details, perfect for editing photos or watching movies. The lightweight build and impressive battery life make it an ideal companion for those on the move. The keyboard's tactile feedback and the spacious trackpad's precision enhance productivity. The MacBook's processing power, whether you opt for the Air or Pro, effortlessly handles multitasking and resource-intensive applications. Innovation extends to its ecosystem, integrating seamlessly with other Apple devices. The MacBook truly encapsulates Apple's commitment to excellence, offering a blend of style, performance, and reliability that sets it apart in the world of laptops."
+                }
+                imageUrl={"/mbookairm2.jpeg"}
+                rating={4}
+                likeCount={69}
+                dislikeCount={4}
+                commentCount={39}
+                shareCount={7}
               />
             );
           })}

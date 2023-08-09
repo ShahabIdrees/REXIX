@@ -1,9 +1,9 @@
 import React from "react";
 import { useState, useEffect } from "react";
-import ReviewCard from "../../Components/ReviewCard/Reviewcard";
 import "./TopReviews.css";
 import "bootstrap/dist/css/bootstrap.css";
 import "bootstrap/dist/js/bootstrap.js";
+import ProductCard from "../../Components/ProductCard/ProductCard";
 
 const TopProducts = () => {
   const [TopProducts, setTopProducts] = useState([]);
@@ -48,7 +48,7 @@ const TopProducts = () => {
               id="card1"
               className="col-5 col-sm-3 col-md-2 gx-1 d-inline-block ms-1"
             >
-              <ReviewCard
+              <ProductCard
                 key={product.Name}
                 name={product.Name}
                 rating={product.rating}
