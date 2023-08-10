@@ -75,7 +75,7 @@ const ReviewCard = ({
                 style={{
                   width: `${rating * 20}%`,
                   borderRadius: "50%",
-                  backgroundColor: teal,
+                  color: teal,
                 }}
                 aria-valuenow={rating * 20}
                 aria-valuemin="0"

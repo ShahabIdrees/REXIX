@@ -1,6 +1,8 @@
 import ReviewCard from "../../Components/ReviewCard/Reviewcard";
 import { useState, useEffect } from "react";
 import React from "react";
+import Sidebar from "../../containers/Sidebar/Sidebar";
+import RightSidebar from "../../containers/RightSidebar/RightSidebar";
 
 const FeedScreen = () => {
   const [FeedContent, setFeedContent] = useState([]);
@@ -24,8 +26,10 @@ const FeedScreen = () => {
 
   return (
     <div className="container-fluid">
-      <div className="row">
-        <div className="col bg-danger col-4">div 1</div>
+      <div className="row mt-2 mb-2">
+        <div className="col col-3">
+          <Sidebar />
+        </div>
 
         <div
           className="col bg-dark overflow-scroll col-5 justify-content-center"
@@ -49,7 +53,9 @@ const FeedScreen = () => {
           })}
           <button className="btn btn-outline-info">See more</button>
         </div>
-        <div className="col bg-warning col-3"></div>
+        <div className="col col-4">
+          <RightSidebar />
+        </div>
       </div>
     </div>
   );
