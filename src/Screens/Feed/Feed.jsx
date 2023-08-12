@@ -27,12 +27,15 @@ const FeedScreen = () => {
   return (
     <div className="container-fluid">
       <div className="row mt-2 mb-2">
-        <div className="col col-3">
+        <div
+          className="col col-3 bg-dark overflow-scroll justify-content-center br-2"
+          style={{ height: "100vh" }}
+        >
           <Sidebar />
         </div>
 
         <div
-          className="col bg-dark overflow-scroll col-5 justify-content-center"
+          className="col bg-dark overflow-scroll col-5 justify-content-center br-2"
           style={{ height: "100vh" }}
         >
           {FeedContent.map((post) => {
@@ -53,7 +56,10 @@ const FeedScreen = () => {
           })}
           <button className="btn btn-outline-info">See more</button>
         </div>
-        <div className="col col-4">
+        <div
+          className="col col-4 bg-dark overflow-scroll justify-content-center"
+          style={{ height: "100vh" }}
+        >
           <RightSidebar />
         </div>
       </div>

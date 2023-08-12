@@ -1,0 +1,92 @@
+/* RightSidebar.css */
+
+
+.sidebar-section {
+    margin-bottom: 30px;
+}
+
+.btn-sidebar {
+    background-color: transparent;
+    border: none;
+    color: #ccc;
+    cursor: pointer;
+}
+
+.btn-sidebar:hover {
+    color: #999;
+}
+
+.contact-card {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.profile-image {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.contact-info {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-name {
+    font-weight: bold;
+}
+
+
+
+.rating-filled {
+    height: 100%;
+    background-color: #0DCBF0;
+    border-radius: 5px;
+}
+/* RightSidebar.css */
+
+.right-sidebar {
+  padding: 20px;
+  overflow-y: auto; /* Add this line to make the sidebar scrollable */
+  height: 100%;
+}
+/* RightSidebar.css */
+
+.rating-bar {
+    height: 20px;
+    /* Increase the height */
+    background-color: #ddd;
+    border-radius: 10px;
+    /* Make it rounder */
+    margin-top: 5px;
+    overflow: hidden;
+    position: relative;
+    /* Add this line */
+}
+
+.rating-filled {
+    height: 100%;
+    background-color: #0DCBF0;
+    border-radius: 10px;
+    /* Make it rounder */
+}
+
+.rating-number {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #333;
+    font-weight: bold;
+}
+
+
+/* ... (rest of the CSS) */
+/* RightSidebar.css */
+
+
+
+/* ... (rest of the CSS) */

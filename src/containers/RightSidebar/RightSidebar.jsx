@@ -1,15 +1,13 @@
 import React, { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
-  faStar,
   faChevronDown,
   faUsers,
   faComments,
+  faStar,
   faSearch,
 } from "@fortawesome/free-solid-svg-icons";
 import "./RightSidebar.css"; // Import your custom CSS file
-
-// ... (import statements)
 
 const RightSidebar = () => {
   const [showAllBrands, setShowAllBrands] = useState(false);
@@ -28,38 +26,90 @@ const RightSidebar = () => {
     setShowAllGroupChats(!showAllGroupChats);
   };
 
-  // Example data for profile images
   const followedBrands = [
-    "brand1.jpg",
-    "brand2.jpg",
-    "brand3.jpg",
+    { name: "Apple", image: "Computers.jpg", rating: 4.5 },
+    { name: "Samsung", image: "HomeAppliances.jpg", rating: 3.7 },
+    { name: "Dell", image: "Imac.jpg", rating: 4.5 },
+    { name: "Lenovo", image: "Kitchenware.jpg", rating: 3.7 },
+    { name: "HP", image: "mbookair.png", rating: 4.5 },
+    { name: "MSI", image: "brand2.jpg", rating: 3.7 },
+    { name: "Asus", image: "brand1.jpg", rating: 4.5 },
+    { name: "Acer", image: "brand2.jpg", rating: 3.7 },
     // ...
   ];
 
   const friends = [
-    "friend1.jpg",
-    "friend2.jpg",
-    "friend3.jpg",
+    { name: "Shahab Idrees", image: "/Shahab_Photo.png", rating: 4.8 },
+    { name: "Asif Munir", image: "/Shahab_Photo.png", rating: 4.2 },
+    { name: "Arif Akram", image: "/Shahab_Photo.png", rating: 4.8 },
+    { name: "Ammad Chattha", image: "/Shahab_Photo.png", rating: 4.2 },
+    { name: "Majid Mughal", image: "/Shahab_Photo.png", rating: 4.8 },
+    { name: "Taimoor Khan", image: "/Shahab_Photo.png", rating: 4.2 },
+    { name: "Ali Hassan", image: "/Shahab_Photo.png", rating: 4.8 },
+    { name: "Babar Azam", image: "/Shahab_Photo.png", rating: 5.0 },
+    { name: "Saud Shakeel", image: "/Shahab_Photo.png", rating: 4.8 },
+    { name: "Asif Afridi", image: "/Shahab_Photo.png", rating: 4.2 },
+    { name: "General Asim Munir", image: "/Shahab_Photo.png", rating: 4.8 },
+    { name: "Kamran Saboor", image: "/Shahab_Photo.png", rating: 5.0 },
+    { name: "Hamza Riaz", image: "/Shahab_Photo.png", rating: 4.8 },
+    { name: "Asif Afridi", image: "/Shahab_Photo.png", rating: 4.2 },
+    { name: "Ali Hassan", image: "/Shahab_Photo.png", rating: 4.8 },
+    { name: "Asif Afridi", image: "/Shahab_Photo.png", rating: 4.2 },
+    { name: "Shahab Idrees", image: "/Shahab_Photo.png", rating: 4.8 },
+    { name: "Asif Munir", image: "/Shahab_Photo.png", rating: 4.2 },
+    { name: "Arif Akram", image: "/Shahab_Photo.png", rating: 4.8 },
+    { name: "Ammad Chattha", image: "/Shahab_Photo.png", rating: 4.2 },
+    { name: "Majid Mughal", image: "/Shahab_Photo.png", rating: 4.8 },
+    { name: "Taimoor Khan", image: "/Shahab_Photo.png", rating: 4.2 },
+    { name: "Ali Hassan", image: "/Shahab_Photo.png", rating: 4.8 },
+    { name: "Babar Azam", image: "/Shahab_Photo.png", rating: 5.0 },
+    { name: "Saud Shakeel", image: "/Shahab_Photo.png", rating: 4.8 },
+    { name: "Asif Afridi", image: "/Shahab_Photo.png", rating: 4.2 },
+    { name: "General Asim Munir", image: "/Shahab_Photo.png", rating: 4.8 },
+    { name: "Kamran Saboor", image: "/Shahab_Photo.png", rating: 5.0 },
+    { name: "Hamza Riaz", image: "/Shahab_Photo.png", rating: 4.8 },
+    { name: "Asif Afridi", image: "/Shahab_Photo.png", rating: 4.2 },
+    { name: "Ali Hassan", image: "/Shahab_Photo.png", rating: 4.8 },
+    { name: "Asif Afridi", image: "/Shahab_Photo.png", rating: 4.2 },
     // ...
   ];
 
   const groupChats = [
-    "group1.jpg",
-    "group2.jpg",
-    "group3.jpg",
+    { name: "Group Chat 1", image: "group1.jpg", rating: 3.9 },
+    { name: "Group Chat 2", image: "group2.jpg", rating: 4.1 },
+    { name: "Group Chat 3", image: "group1.jpg", rating: 3.9 },
+    { name: "Group Chat 4", image: "group2.jpg", rating: 4.1 },
+    { name: "Group Chat 5", image: "group1.jpg", rating: 3.9 },
+    { name: "Group Chat 6", image: "group2.jpg", rating: 4.1 },
+    { name: "Group Chat 7", image: "group1.jpg", rating: 3.9 },
+    { name: "Group Chat 8", image: "group2.jpg", rating: 4.1 },
     // ...
   ];
 
-  const renderProfileImages = (images, limit, showAll) => {
-    const displayedImages = showAll ? images : images.slice(0, limit);
+  const renderContactCards = (contacts, limit, showAll) => {
+    const displayedContacts = showAll ? contacts : contacts.slice(0, limit);
 
-    return displayedImages.map((image, index) => (
-      <img
-        key={index}
-        src={image}
-        alt={`Profile ${index}`}
-        className="profile-image"
-      />
+    return displayedContacts.map((contact, index) => (
+      // Inside the renderContactCards function
+      // Inside the renderContactCards function
+      <div className="contact-card" key={index}>
+        <img
+          src={contact.image}
+          alt={`Profile ${index}`}
+          className="profile-image"
+        />
+        <div className="contact-info">
+          <span className="contact-name">{contact.name}</span>
+          <div className="rating-bar">
+            <div
+              className="rating-filled"
+              style={{ width: `${contact.rating * 20}%` }}
+            >
+              <div className="rating-number">{contact.rating.toFixed(1)}</div>
+            </div>
+          </div>
+        </div>
+      </div>
     ));
   };
 
@@ -67,16 +117,15 @@ const RightSidebar = () => {
     <div className="right-sidebar bg-dark text-white">
       <section className="sidebar-section">
         <h4>Followed Brands</h4>
+        <div className="contact-cards">
+          {renderContactCards(followedBrands, 5, showAllBrands)}
+        </div>
         {followedBrands.length > 5 && (
           <button className="btn btn-sidebar" onClick={toggleBrandsVisibility}>
             {showAllBrands ? "See Less" : "See More"}{" "}
             <FontAwesomeIcon icon={faChevronDown} />
           </button>
         )}
-        <ul className="list-unstyled followed-brands">
-          {renderProfileImages(followedBrands, 5, showAllBrands)}
-        </ul>
-        {/* ... */}
       </section>
 
       <section className="sidebar-section">
@@ -84,23 +133,22 @@ const RightSidebar = () => {
           Friends & Family{" "}
           <FontAwesomeIcon icon={faUsers} className="section-icon" />
         </h4>
-        <ul className="list-unstyled friends-list">
-          {renderProfileImages(friends, 15, showAllFriends)}
-        </ul>
+        <div className="contact-cards">
+          {renderContactCards(friends, 15, showAllFriends)}
+        </div>
         {friends.length > 15 && (
           <button className="btn btn-sidebar" onClick={toggleFriendsVisibility}>
             {showAllFriends ? "See Less" : "See More"}{" "}
             <FontAwesomeIcon icon={faChevronDown} />
           </button>
         )}
-        {/* ... */}
       </section>
 
       <section className="sidebar-section">
         <h4>Group Conversations</h4>
-        <ul className="list-unstyled group-chats">
-          {renderProfileImages(groupChats, 5, showAllGroupChats)}
-        </ul>
+        <div className="contact-cards">
+          {renderContactCards(groupChats, 5, showAllGroupChats)}
+        </div>
         {groupChats.length > 5 && (
           <button
             className="btn btn-sidebar"
@@ -110,7 +158,6 @@ const RightSidebar = () => {
             <FontAwesomeIcon icon={faChevronDown} />
           </button>
         )}
-        {/* ... */}
       </section>
     </div>
   );
